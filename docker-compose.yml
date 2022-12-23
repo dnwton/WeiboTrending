@@ -1,0 +1,10 @@
+version: 0.1
+services:
+  crawl:
+    build: .
+    ports:
+      - "5010:5010"
+  mongo:
+    image: "mongo:4.4.14-nanoserver"
+  elasticsearch:
+    image: "elasticsearch:7.13.4"
